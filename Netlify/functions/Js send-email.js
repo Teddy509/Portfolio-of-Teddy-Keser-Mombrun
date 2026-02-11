@@ -43,8 +43,8 @@ exports.handler = async (event) => {
     }
 
     // Teacher: change these
-    const TO_EMAIL = "guadalupe.ccb23@gmail.com";     // example: teacher@school.org
-    const FROM_EMAIL = "guadalupe.ccb23@gmail.com"; // must be allowed in Elastic Email
+    const TO_EMAIL = "teddyconcept1@gmail.com";     // example: teacher@school.org
+    const FROM_EMAIL = "teddyconcept1@gmail.com"; // must be allowed in Elastic Email
 
     if (!TO_EMAIL || !FROM_EMAIL) {
       return { statusCode: 500, headers: corsHeaders, body: JSON.stringify({ error: "Server is missing TO/FROM email" }) };
@@ -100,4 +100,5 @@ function escapeHtml(str = "") {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+
 }
