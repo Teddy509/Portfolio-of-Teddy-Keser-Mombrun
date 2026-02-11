@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Story - TeddyConcept</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav-left">
+            <a href="#">Home</a>
+            <a href="#" class="active">My Story</a>
+            <a href="#">Contact</a>
+            <a href="https://diamondcleaninggroup.com/">Work</a>
+        </nav>
+        
+        <div class="logo">
+            <h1>TeddyConcept</h1>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://x.com/alainpossible" class="twitter">🐦</a>
+            <a href="https://www.linkedin.com/feed/?trk=microsoft_login" class="linkedin">in</a>
+            <a href="https://www.facebook.com/" class="facebook">f</a>
+            <a href="https://www.instagram.com/" class="instagram">📷</a>
+        </div>
+    </header>
+
+    <main class="story-container">
+        <h1 class="page-title">My Story</h1>
+        
+        <div class="story-content">
+            <div class="profile-section">
+                <img src="img/Teddy.jpeg" alt="Teddy Portrait" class="profile-image">
+            </div>
+            
+            <div class="bio-section">
+                
+                <p>Teddy Keser Mombrun is a young Haitian medical doctor but also a cartoonist for the newspaper Le NOUVELLISTE, the oldest and only daily newspaper in Haiti.
+Born on October 18, Teddy did his classical studies at the Canadian-Haitian College and then his medical studies at the University of Notre Dame in Haiti. From an early age he cultivated this passion for drawing and with the support of his parents he managed to juggle his career as a doctor and press caricaturist. His caricatures have been published in the columns of the Nouvelliste newspaper since June 2006 and have generated quite a few comments.
+Teddy Keser Mombrun has already published several comic book collections (Alain Possible and Politikomik.) His character Alain Possible is very popular and appeals to all generations. His inspiration is often based on current events, which allows him to play a mirror role within society in order to stimulate their thinking while entertaining them.
+Currently, Teddy is the owner of an audiovisual communication agency, Teddy Concept where he offers his services in illustrations and animation to national and international organizations.
+ 
+
+
+    </main>
+
+    <h1>Contact Teddy Keser Mombrun</h1>
+    <h4>You want to join the team please fill out the form</h4>
+    <div class="contact-form">
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>All original content and images are the copyright of Teddy Keser Mombrun.</p>
+        <p>@2026</p>
+        <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background: white;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-left {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #999;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-left a.active {
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-left a:hover {
+    color: #333;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Brush Script MT', cursive;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #e63946;
+    text-decoration: none;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Story Container */
+.story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+}
+
+.profile-section {
+    position: sticky;
+    top: 30px;
+    height: fit-content;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.bio-section {
+    color: #999;
+}
+
+.tagline {
+    color: #e63946;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.bio-section p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.red-link {
+    color: #e63946;
+    text-decoration: none;
+    border-bottom: 1px solid #e63946;
+    transition: opacity 0.3s;
+}
+
+.red-link:hover {
+    opacity: 0.7;
+}
+
+.section-title {
+    color: #e63946;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    color: #999;
+    font-size: 16px;
+}
+
+.awards-list {
+    list-style: none;
+    color: #999;
+}
+
+.awards-list li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 60px 40px;
+    background: white;
+    color: #999;
+    font-size: 14px;
+    position: relative;
+    margin-top: 80px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    z-index: 100;
+}
+
+.scroll-top:hover {
+    background: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .profile-section {
+        position: static;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        order: -1;
+    }
+    
+    .story-container {
+        padding: 40px 20px;
+    }
+    
+    .page-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    
+    .bio-section p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .tagline {
+        font-size: 18px;
+    }
+    
+    .bio-section p,
+    .skills-list,
+    .awards-list li {
+        font-size: 14px;
+    }
+    
+    .nav-left {
+        gap: 20px;
+    }
+    
+    .nav-left a {
+        font-size: 14px;
+    }
+}
+
+
+
+.contact-form {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
